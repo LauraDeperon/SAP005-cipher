@@ -1,0 +1,128 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@font-face{
+    font-family: 'FonteRevista';
+    src: url(fontes/REVISTA.ttf);
+}
+
+body{
+    background-color: #39b6b0;
+    font-family: arial, sans-serif;
+    text-align: justify;
+}
+
+p{
+    text-indent: 50px;
+}
+
+div#interface{
+    width: 900px;
+    background-color:#90deda;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 10px;
+}
+
+header#cabecalho h2{
+    font-family: 'FonteRevista', sans-serif;
+    font-size: xx-large;
+    margin-top: 20px;
+    padding: 40px 20px 20px 180px;
+}
+
+header#cabecalho img#logo{
+    border-radius: 100%;
+    width: 15%;
+    margin-top: 10px;
+    float: left;
+    margin-left: 10px;
+}
+
+section#cifraCesar{
+    display: block;
+    padding: 20px;
+}
+
+section#principal {
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+    background-image: url(midias/imagens/Codificador.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 20px 10px 0px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+section#principal form{
+    margin-top: 10px;
+}
+section#principal textarea{
+    height: 400%;
+    width: 80%;
+}
+
+form output.resultado{
+    display: block;
+    background-color: #ffffff;
+    width: 420px;
+    height: 100px;
+    border: 1px solid rgba(0,0,0,.5);
+    margin-top: 10px;
+}
+
+form label{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+form input.offset{
+    width: 20px;
+    display: inline-block;
+}
+
+form button{
+    display: inline-block;
+}
+
+section#principal img{
+    width: 40%;
+    display: block;
+    margin:20px auto;
+    border-radius: 10px 20px;
+}
+
+aside#lateral{
+    display: block;
+    width: 350px;
+    float: right;
+    background-color: #39b6b0;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+aside#lateral video{
+    width: 100%;
+}
+
+a{
+    color:#030d80;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+footer#rodape{
+    clear: both; 
+    border-top: 1px solid #606060; 
+}
+
+footer#rodape p{
+    text-align: center;
+}
