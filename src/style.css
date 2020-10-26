@@ -57,16 +57,32 @@ section#principal {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
 }
 
+section#principal form{
+    margin-top: 10px;
+}
+section#principal textarea{
+    height: 400%;
+    width: 80%;
+}
+
+form output.resultado{
+    display: block;
+    background-color: #ffffff;
+    width: 420px;
+    height: 100px;
+    border: 1px solid rgba(0,0,0,.5);
+    margin-top: 10px;
+}
+
+form input.offset{
+    width: 20px;
+}
+
 section#principal img{
     width: 40%;
     display: block;
     margin:20px auto;
     border-radius: 10px 20px;
-}
-
-section#principal textarea{
-    height: 400%;
-    width: 80%;
 }
 
 aside#lateral{

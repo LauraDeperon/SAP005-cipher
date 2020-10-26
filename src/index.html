@@ -17,16 +17,37 @@
       </section> 
       <section id="principal">
         <form>
-          <label for="msgCod">Mensagem a ser cifrada:</label><br>
-          <textarea id="msgCod" type:"text" cols="35" rows="8" placeholder="Digite aqui a mensagem que você quer que seja codificada através da Cifra de César. Não usar números ou carcteres especiais."></textarea>
+          <fieldset>
+            <legend>Codificar</legend>
+            <label for="msgCod">Mensagem:</label><br>
+            <textarea id="msgCod" type:"text" cols="35" rows="8" placeholder="Digite aqui a mensagem que você quer que seja codificada através da Cifra de César. Não usar números ou carcteres especiais."></textarea> <br>
+            
+            <label for="offset">Posição de deslocamento (escolha de 1 a 25)</label><br>
+            <input class="offset" type:"number" required>
 
-          <button id="codificar">Codificar</button>
-          <br> 
-          <label for="msgDecod">Mensagem a ser decifrada:</label><br>
-          <textarea id="msgDecod" type:"text" placeholder="Digite aqui a mensagem que você quer que seja decodificada através da Cifra de César. Não usar números ou carcteres especiais." cols="35" rows="8"></textarea>
+            <button id="codificar">Codificar</button> 
+            
+            <output id="resultCod" class="resultado">
+              <p></p>
+            </output>
+          </fieldset>
+        </form>
 
-          <button id="descodificar">Decodificar</button>
+        <form>
+          <fieldset>
+            <legend>Descodificar</legend>
+            <label for="msgDecod">Mensagem:</label><br>
+            <textarea id="msgDecod" type:"text" placeholder="Digite aqui a mensagem que você quer que seja decodificada através da Cifra de César. Não usar números ou carcteres especiais." cols="35" rows="8"></textarea> <br>
 
+            <label for="offset">Posição de deslocamento (escolha de 1 a 25)</label><br>
+            <input class="offset" type:"number" alt="Digite aqui o numero de posições que deseja trocar no alfabeto" required>
+
+            <button id="descodificar">Decodificar</button> 
+
+            <output id="resultDecod" class="resultado">
+                <p></p>
+            </output>
+          </fieldset>
         </form>
         <img src="midias/imagens/encerramento.gif">
         <div id=resultMsgCod>
