@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id=interface>
+    <div id="interface">
       <header id="cabecalho">
         <img id="logo" src="midias/imagens/CapaEnola.jpeg"> 
         <h2>Criptografe e descriptografe suas mensagens como Enola Holmes!</h2>
@@ -19,51 +19,40 @@
         <form>
           <fieldset>
             <legend>Codificar</legend>
-            <label for="msgCod">Mensagem:</label><br>
-            <textarea id="msgCod" type:"text" cols="35" rows="8" placeholder="Digite aqui a mensagem que você quer que seja codificada através da Cifra de César. Não usar números ou carcteres especiais."></textarea> <br>
+            <label for="msgCod">Mensagem:</label>
+            <textarea id="msgCod" type="text" cols="35" rows="8" placeholder="Digite aqui a mensagem que você quer que seja codificada através da Cifra de César. Não usar números ou caracteres especiais."></textarea> 
             
-            <label for="offset">Posição de deslocamento (escolha de 1 a 25)</label><br>
-            <input class="offset" type:"number" required>
+            <label for="offset">Posição de deslocamento (escolha de 1 a 25)</label>
+            <input id="offsetCod" class="offset" type="number" required min="1" max="25">
 
             <button id="codificar">Codificar</button> 
             
-            <output id="resultCod" class="resultado">
-              <p></p>
-            </output>
+            <div id="resultCod" class="resultado"> </div>
           </fieldset>
         </form>
 
         <form>
           <fieldset>
             <legend>Descodificar</legend>
-            <label for="msgDecod">Mensagem:</label><br>
-            <textarea id="msgDecod" type:"text" placeholder="Digite aqui a mensagem que você quer que seja decodificada através da Cifra de César. Não usar números ou carcteres especiais." cols="35" rows="8"></textarea> <br>
+            <label for="msgDecod">Mensagem:</label>
+            <textarea id="msgDecod" type="text" placeholder="Digite aqui a mensagem que você quer que seja decodificada através da Cifra de César. Não usar números ou caracteres especiais." cols="35" rows="8"></textarea> <br>
 
-            <label for="offset">Posição de deslocamento (escolha de 1 a 25)</label><br>
-            <input class="offset" type:"number" alt="Digite aqui o numero de posições que deseja trocar no alfabeto" required>
+            <label for="offset">Posição de deslocamento (escolha de 1 a 25)</label>
+            <input id="offsetDecod" class="offset" type="number" min="1" max="25" required>
 
-            <button id="descodificar">Decodificar</button> 
+            <button id="decodificar">Decodificar</button> 
 
-            <output id="resultDecod" class="resultado">
-                <p></p>
-            </output>
+            <div id="resultDecod" class="resultado"> </div>
           </fieldset>
         </form>
         <img src="midias/imagens/encerramento.gif">
-        <div id=resultMsgCod>
-
-        </div>
-        
-        <div id=resultMsgDescod>
-
-        </div>
       </section>
       <aside id="lateral">
         <h2>Assista ao trailer e leia a sinopse do filme!</h2>
         <p>
           Enola Holmes (Millie Bobby Brown) é uma menina adolescente cujo irmão, 20 anos mais velho, é o renomado detetive Sherlock Holmes (Henry Cavill). Quando sua mãe (Helena Bonham Carter) desaparece, fugindo do confinamento da sociedade vitoriana e deixando dinheiro para trás para que Enola faça o mesmo, a menina inicia uma investigação para descobrir o paradeiro dela, ao mesmo tempo em que precisa ir contra os desejos de seu irmão, Mycroft (Sam Claflin), que quer mandá-la para um colégio interno só de meninas. A caminho de Londres, ela conhece um lorde fugitivo (Louis Partridge) e passa a desvendar quem pode estar atrás do garoto e que quer impedir que uma importante reforma política inglesa aconteça.
         </p>
-        <video controls poster="demo.jpg">
+        <video controls = "controls">
           <source src="midias/trailer/trailer-Enola.mp4" type="video/mp4">
         </video>
       </aside>

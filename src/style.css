@@ -65,7 +65,7 @@ section#principal textarea{
     width: 80%;
 }
 
-form output.resultado{
+form div.resultado{
     display: block;
     background-color: #ffffff;
     width: 420px;
@@ -74,8 +74,18 @@ form output.resultado{
     margin-top: 10px;
 }
 
+form label{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
 form input.offset{
-    width: 20px;
+    width: 30px;
+    display: inline-block;
+}
+
+form button{
+    display: inline-block;
 }
 
 section#principal img{
