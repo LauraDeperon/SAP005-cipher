@@ -4,28 +4,88 @@ const cipher = {
 
 export default cipher;
 
-const btnCodificar = document.getElementById("codificar")
-btnCodificar.addEventListener("click", codificar)
+const tamAlfabeto=26;
+let resultMsgCod="";
+const btnCodificar = document.getElementById("codificar");
+btnCodificar.addEventListener("click", encode);
+let resultMsgDecod="";
+const btnDecodificar = document.getElementById("decodificar");
+btnDecodificar.addEventListener("click", decode);
 
-function codificar(eventoDeClique){
-  eventoDeClique.preventDefault()
+function encode(eventoDeClique){
+  eventoDeClique.preventDefault();
 
   let msgCod = document.getElementById("msgCod").value;
-  let offsetCod = document.getElementById("offsetCod").value;
-  const codASC = msgCod.charCodeAt(0)
-  const desloc = ((codASC-65+offsetCod)%26)+65
-  document.getElementById("resultCod").innerHTML = String.fromCharCode(desloc)
+  let offsetCod = Number(document.getElementById("offsetCod").value);
+  
+  for (let i = 0; i < msgCod.length; i++) {
+    const codASC = msgCod.charCodeAt(i);
+    
+    if (codASC >= 65 && codASC <= 90) {
+      let cod1letra=65;
+      const desloc = ((codASC-cod1letra+offsetCod)%tamAlfabeto)+cod1letra;
+      console.log(desloc);
+      let MsgCod=String.fromCharCode(desloc);
+      console.log(MsgCod);
+    }
+    else if (codASC >= 97 && codASC <= 122) {
+      let cod1letra=97;
+      const desloc = ((codASC-cod1letra+offsetCod)%tamAlfabeto)+cod1letra;
+      console.log(desloc);
+      let MsgCod=String.fromCharCode(desloc);
+      console.log(MsgCod);
+    }
+    else if (codASC === 32) {
+      let MsgCod=String.fromCharCode(" ");
+      console.log(MsgCod);
+    }
+    else if (codASC === 44) {
+      let MsgCod=String.fromCharCode(",");
+      console.log(MsgCod);
+    }
+    else if (codASC === 46) {
+      let MsgCod=String.fromCharCode(".");
+      console.log(MsgCod);
+    }
+    else{
+     alert("Digite apenas os caracteres aceitos!");
+     window.location.reload();
+     break;
+    } 
+    resultMsgCod += msgCod;
+  }
+  document.getElementById("resultCod").innerHTML=resultMsgCod;
+  return resultMsgCod;
 }
 
-const btnDecodificar = document.getElementById("decodificar")
-btnDecodificar.addEventListener("click", decodificar)
 
-function decodificar(eventoDeClique){
+function decode(eventoDeClique){
   eventoDeClique.preventDefault()
-
-  let msgCod = document.getElementById("msgDecod").value;
-  let offsetCod = document.getElementById("offsetDecod").value;
-  const codASC = msgCod.charCodeAt(0)
-  const desloc = codASC-65-offsetCod%26+65
-  document.getElementById("resultDecod").innerHTML = String.fromCharCode(desloc)
+ 
+  let msgDecod = document.getElementById("msgDecod").value;
+  let offsetCod = Number(document.getElementById("offsetDecod").value);
+  
+  for (let i = 0; i < msgDecod.length; i++) {
+    const codASC = msgDecod.charCodeAt(i);
+    
+    if (codASC >= 65 && codASC <= 90) {
+      const desloc = ((codASC-cod1letra-offsetCod)%tamAlfabeto)+cod1letra;
+      console.log(desloc);
+      let MsgDecod=String.fromCharCode(desloc);
+      console.log(MsgDecod);
+      resultMsgDecod += msgDecod;
+    }
+    else if (codASC === 32) {
+      let MsgDecod=String.fromCharCode(" ");
+      console.log(MsgDecod);
+      resultMsgDecod += msgDecod;
+    }
+    else{
+     alert("Digite apenas os caracteres aceitos!");
+     window.location.reload();
+     break;
+    } 
+  }
+  document.getElementById("resultDecod").innerHTML=resultMsgDecod;
+  return resultMsgDecod;
 }
