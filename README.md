@@ -1,28 +1,19 @@
-# Cifra de César
+# Cifra de César (Enola Holmes)
 
 ## Índice
 
-* [1. Prefácio](#1-prefácio)
+* [1. Protótipo](#1-protótipo)
 * [2. Resumo do projeto](#2-resumo-do-projeto)
-* [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
-* [4. Considerações gerais](#4-considerações-gerais)
-* [5. Critérios de aceitação mínimos do
-  projeto](#5-criterios-de-aceitação-mínimos-do-projeto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Considerações técnicas](#7-considerações-técnicas)
-* [8. Guias, dicas e leituras
-  complementares](#8-guias-dicas-e-leituras-complementares)
-* [9. Checklist](#9-checklist)
+* [3. Usuários e suas relações com o produto](#3-usuários-e-suas-relações-com-o-produto)
+* [4. Como o produto soluciona os problemas/necessidades dos usuários](#4-como-o-produto-soluciona-os-problemas-/-necessidades-dos-usuários)
+* [5. Considerações Finais](#6-considerações-finais)
+* [6. Checklist](#9-checklist)
 
 ***
 
-## 1. Prefácio
+## 1. Protótipo
 
-Cifrar significa codificar. A [cifra de
-César](https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar) é um dos primeiros
-tipos de criptografias conhecidas na história. O imperador romano Júlio César
-utilizava essa cifra para enviar ordens secretas aos seus generais no campo de
-batalha.
+A seguir está o protótipo inicial do site. Um fluxograma das funcionalidades do site e um fluxo do processo de criação do projeto final.
 
 ![caeser-cipher](https://user-images.githubusercontent.com/11894994/60990999-07ffdb00-a320-11e9-87d0-b7c291bc4cd1.png)
 
