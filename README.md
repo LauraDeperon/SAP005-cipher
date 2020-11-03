@@ -15,7 +15,11 @@
 
 A seguir, está o protótipo inicial do site. Um fluxograma da criação das funcionalidades do site e um fluxo dos processos para criação do projeto.
 
-![caeser-cipher](https://user-images.githubusercontent.com/11894994/60990999-07ffdb00-a320-11e9-87d0-b7c291bc4cd1.png)
+![Protótipo](https://github.com/LauraDeperon/SAP005-cipher.github/blob/master/img-readme/Prototipo%20Cifra%20de%20Cesar_pages-to-jpg-0001.jpg)
+
+![Fluxograma-Funcionalidades](https://github.com/LauraDeperon/SAP005-cipher.github/blob/master/img-readme/Fluxograma%20Funcionalidade%20-%20Cifra%20de%20Cesar_pages-to-jpg-0001.jpg)
+
+![Fluxo-Processos](https://github.com/LauraDeperon/SAP005-cipher.github/blob/master/img-readme/Fluxo%20do%20Processo%20-%20Cifra%20de%20Cesar_pages-to-jpg-0001.jpg)
 
 ## 2. Resumo do projeto
 
