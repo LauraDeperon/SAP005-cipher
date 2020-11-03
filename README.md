@@ -61,7 +61,7 @@ O produto faz a criptografia apenas do alfabeto maíusculo: "A B C D E F G H I J
 
 ### Parte Opcional: "Hacker edition"
 
-* [ ] Cifrar/decifrar minúsculas.
-* [ ] Cifrar/decifrar _outros_ caractéres (espações, pontuação, `ç`, `á`, ...).
-* [ ] Permitir usar `offset` negativo.
+* [X] Cifrar/decifrar minúsculas.
+* [X] Cifrar/decifrar _outros_ caractéres (espações, pontuação, `ç`, `á`, ...).
+* [X] Permitir usar `offset` negativo.
 
