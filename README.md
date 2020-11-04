@@ -31,11 +31,11 @@ O produto foi criado com foco em usuários que desejam ter uma experiência de c
 
 ## 4. Como o produto soluciona os problemas/necessidades dos usuários
 
-O usuário pode tanto enviar mensagens criptografadas, como descriptografas mensagens recebidas. ASsim solucionando seus problemas e sanando suas necessidades de uma comunicação que não quer que seja decifrada.
+O usuário pode tanto enviar mensagens criptografadas, como descriptografar mensagens recebidas. Assim solucionando seus problemas e sanando suas necessidades de uma comunicação que não quer que seja decifrada.
 
 ## 5. Considerações Finais
 
-O produto faz a criptografia apenas do alfabeto maíusculo: "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z". 
+O projeto foi muito intenso e serviu para mostrar como será o método de ensino da Laboratória, não foi fácil, mas acho que a adaptação virá com o tempo.  
 
 ## 6. Checklist
 
